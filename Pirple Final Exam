@@ -1,0 +1,2366 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="apl.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Apple</title>
+  <style>
+body{
+	margin:0px;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+header{
+	background:rgba(0,0,0,0.8);
+	height:50px;
+	width:100%;
+	position:fixed;
+	z-index: 1;
+
+}
+header ul {
+	padding-top:0px;
+	list-style-type:none;
+	text-align:center;
+	
+}
+header ul li {	
+	display:inline;
+	padding:40px;	
+}
+header ul li a {
+	text-decoration:none;
+	color:  #d9d9d9;
+}
+header ul li a:hover {
+	tet-decoration:none;
+	color:white;
+}
+header ul hr {
+	display:none;
+	color:#d9d9d9;
+}
+input[type=text] , select, input[type=date] {
+	display:none;
+	background-color:#1d1d1f;
+}
+header ul input{
+	margin-left:10%;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 12px 20px 10px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+	color:red;
+}
+.line{
+	width:100%
+}
+.checkbtn {
+	color: #d9d9d9;
+	float:left;
+	font-size:20px;
+	margin-left:15px ;
+	margin-top:10px;
+	display:none;
+	z-index:2
+}
+
+#check{
+	display:none;
+}
+.checkbtn:hover{
+	color:white
+}
+.aplbtn {
+	color: #d9d9d9;
+	text-align:center;
+	font-size:20px;
+	margin-right:20px ;
+	margin-top:10px;
+	display:none;
+	z-index:2;
+}
+.aplbtn:hover{
+	color:white
+}
+#aplbotton{
+	display:none;
+}
+.shpbtn {
+	color: #d9d9d9;
+	float:right;
+	font-size:20px;
+	margin-right:15px ;
+	margin-top:-20px;
+	display:none;
+	z-index:2;
+	
+}
+.shpbtn:hover{
+	color:white
+}
+#shopbotton{
+	display:none;
+}
+
+#iph{
+	display:none
+}
+.first  {
+  position: relative; 
+}
+main .first section {
+	color:white;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .first h1 {
+	font-size:60px;
+	margin-bottom:0px;	
+}
+main .first h3{
+	font-family:"Arial",sans-serif;
+	font-size:30px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .first p{
+	font-size:20px;
+	color:gray;
+	margin-top:0px;
+}
+main .first a {
+	text-decoration:none;
+	color:#2997ff;
+}
+main .first a i {
+	font-size:12px
+}
+
+main .first a:hover {
+	text-decoration:underline;	
+}
+main .first img{
+	width:100%;
+	height:auto;
+}
+.second  {
+  position: relative;
+}
+main .second  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .second  h1 {
+	font-size:60px;
+	margin-bottom:0px;	
+}
+main .second  h3{
+	font-family:"Arial",sans-serif;
+	font-size:22px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .second  p{
+	font-size:20px;
+	color:gray;
+	margin-top:0px;
+}
+main .second  a {
+	text-decoration:none;
+	color: #2997ff;
+}
+main .second  a i {
+	font-size:12px;
+}
+main .second a:hover{
+	text-decoration:underline;
+}
+main .second img{
+	width:100%;
+	height:auto;
+}
+.third  {
+  position: relative;
+  
+}
+
+
+main .third   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .third   h1 {
+	font-size:65px;
+	margin-bottom:0px;	
+}
+
+main .third   p{
+	font-size:30px;
+	color:gray;
+	margin-top:0px;
+}
+main .third   a {
+	text-decoration:none;
+	color: #2997ff;
+}
+
+main .third  a i {
+	font-size:12px;
+}
+main .third a:hover{
+	text-decoration:underline;
+}
+main .third img{
+	width:100%;
+	height:auto;
+}
+#galleryz {
+	display:none;
+}
+#gallery2z{
+	display:none;
+}
+#gallery{
+	display:flex;
+	
+}
+#gallery div {
+	flex: 25%;
+}
+#gallery img {
+	width:100%;
+	padding-bottom:4px;
+	padding-top:4px;
+}
+.fourth  {
+  position: relative;
+   padding-right:2px;
+}
+
+main .fourth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fourth  p{
+	font-size:25px;
+	color:gray;
+	margin-top:0px;
+}
+main .fourth   a {
+	text-decoration:none;
+	color: #2997ff;
+}
+
+main .fourth  a i {
+	font-size:12px;
+}
+main .fourth a:hover{
+	text-decoration:underline;
+}
+
+.fifth {
+  position: relative;
+   padding-left:2px;
+}
+
+main .fifth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fifth   h1 {
+	font-size:65px;
+	margin-bottom:0px;	
+}
+
+main .fifth   p{
+	font-size:20px;
+	color:gray;
+	margin-top:0px;
+}
+main .fifth  a {
+	text-decoration:none;
+	color: #2997ff;
+}
+
+main .fifth  a i {
+	font-size:12px;
+}
+main .fifth a:hover{
+	text-decoration:underline;
+}
+
+
+#gallery2{
+	display:flex;
+	  z-index: -1;
+}
+
+#gallery2 div {
+	flex: 25%;
+
+	
+}
+
+#gallery2 img{
+	width:100%
+}
+
+.sixth {
+  position: relative;
+      padding-right:2px;
+}
+
+main .sixth  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    left: 75%%;
+    transform: translate(-50%, -50%);
+}
+main .sixth   h1 {
+	font-size:65px;
+	margin-bottom:0px;	
+}
+
+main .sixth   p{
+	font-size:20px;
+	color:gray;
+	margin-top:0px;
+}
+main .sixth  a {
+	text-decoration:none;
+	color: #33adff;
+	
+}
+.seventh {
+  position: relative;
+   padding-left:2px;
+}
+
+main .seventh  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+ 
+    transform: translate(-50%, -50%);
+}
+
+main .seventh  h6{
+	font-family:"Arial",sans-serif;
+	font-size:33px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .seventh   p{
+	font-size:20px;
+	color:gray;
+	margin-top:0px;
+}
+main .seventh  a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+footer{
+	background-color: #f2f2f2;
+	height:auto;
+	width:100%;
+	
+
+}
+#addition{
+	display:none;
+}
+footer p {
+	color:#86868b;
+	margin-right:120px;
+	margin-left:120px;
+	font-size:13px;
+	padding-top:20px;
+	font-family:"Arial",sans-serif;
+}
+
+footer section  {
+  display:flex;
+  margin-right:85px;
+  margin-left:85px;
+}
+footer section p3 {
+  font-weight:bold;
+  font-size:14px;
+}
+footer section li {
+  list-style-type:none;
+  line-height: 0,3;
+  color:#86868b;
+  font-size: 14px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:90px;
+  
+}
+footer section a{
+    color:#86868b;
+    text-decoration:none;
+}
+footer section div{
+  margin-top:5px;
+}
+
+hr{
+	align:middle;
+	width:80%
+}
+#more{
+	margin-right:120px;
+	margin-left:120px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#more div a {
+	color:#33adff;
+}
+#finally{
+	margin-right:120px;
+	margin-left:120px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#finally p4{
+	margin-right:10px;
+	 line-height: 0,3;
+}
+#finally a {
+	margin-right:10px;
+	
+}
+#finally a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+	body{
+	margin:0px;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+header{
+	background:rgba(0,0,0,0.8);
+	height:50px;
+	width:100%;
+}
+header ul {
+	padding-top:0px;
+	list-style-type:none;
+	text-align:center;
+}
+header ul li {	
+	display:inline;
+	padding:20px;
+	
+}
+header ul li a {
+	text-decoration:none;
+	color:white;
+}
+
+
+
+.first  {
+  position: relative;
+}
+
+main .first section {
+	color:white;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .first h1 {
+	font-size:55px;
+	margin-bottom:0px;	
+}
+main .first h3{
+	font-family:"Arial",sans-serif;
+	font-size:25px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .first p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .first a {
+	text-decoration:none;
+	color: #33adff;
+}
+main .first img{
+	width:100%;
+}
+
+
+.second  {
+  position: relative;
+}
+
+
+main .second  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .second  h1 {
+	font-size:55px;
+	margin-bottom:0px;	
+}
+main .second  h3{
+	font-family:"Arial",sans-serif;
+	font-size:22px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .second  p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .second  a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+.third  {
+  position: relative;
+}
+
+
+main .third   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .third   h1 {
+	font-size:55px;
+	margin-bottom:0px;	
+}
+
+main .third   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .third   a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+#gallery{
+	display:flex;
+}
+#gallery div {
+	flex: 25%;
+}
+#gallery img {
+	width:100%;
+	padding-bottom:4px;
+	padding-top:4px;
+}
+.fourth  {
+  position: relative;
+   padding-right:2px;
+  
+}
+
+main .fourth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fourth  p{
+	font-size:19px;
+	color:gray;
+	margin-top:0px;
+}
+main .fourth   a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+.fifth {
+  position: relative;
+   padding-left:2px;
+}
+
+main .fifth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fifth   h1 {
+	font-size:50px;
+	margin-bottom:0px;	
+}
+
+main .fifth   p{
+	font-size:19px;
+	color:gray;
+	margin-top:0px;
+}
+main .fifth  a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+
+#gallery2{
+	display:flex;
+}
+
+#gallery2 div {
+	flex: 25%;
+
+	
+}
+
+#gallery2 img{
+	width:100%
+}
+
+.sixth {
+  position: relative;
+      padding-right:2px;
+}
+
+main .sixth  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    left: 75%%;
+    transform: translate(-50%, -50%);
+}
+main .sixth   h1 {
+	font-size:50px;
+	margin-bottom:0px;	
+}
+
+main .sixth   p{
+	font-size:17px;
+	color:gray;
+	margin-top:0px;
+}
+main .sixth  a {
+	text-decoration:none;
+	color: #33adff;
+	
+}
+.seventh {
+  position: relative;
+   padding-left:2px;
+}
+
+main .seventh  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+ 
+    transform: translate(-50%, -50%);
+}
+
+main .seventh  h6{
+	font-family:"Arial",sans-serif;
+	font-size:25px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .seventh   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .seventh  a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+
+footer{
+	background-color: #f2f2f2;
+	height:700px;
+
+}
+footer p {
+	color:#86868b;
+	margin-right:120px;
+	margin-left:120px;
+	font-size:13px;
+	padding-top:20px;
+	font-family:"Arial",sans-serif;
+}
+
+footer section  {
+  display:flex;
+  margin-right:85px;
+  margin-left:85px;
+}
+footer section p3 {
+  font-weight:bold;
+  font-size:14px;
+}
+footer section li {
+  list-style-type:none;
+  line-height: 0,3;
+  color:#86868b;
+  font-size: 14px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:90px;
+  
+}
+footer section a{
+    color:#86868b;
+    text-decoration:none;
+}
+footer section div{
+  margin-top:5px;
+}
+
+hr{
+	align:middle;
+	width:80%
+}
+#more{
+	margin-right:120px;
+	margin-left:120px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#more div a {
+	color:#33adff;
+}
+#finally{
+	margin-right:120px;
+	margin-left:120px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#finally p4{
+	margin-right:10px;
+	 line-height: 0,3;
+}
+#finally a {
+	margin-right:10px;
+	
+}
+#finally a:hover{
+	text-decoration:underline;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px){
+	body{
+	margin:0px;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+header{
+	background:rgba(0,0,0,0.8);
+	height:50px;
+	width:100%;
+}
+header ul {
+	padding-top:0px;
+	list-style-type:none;
+	text-align:center;
+}
+header ul li {	
+	display:inline;
+	padding:10px;
+	
+}
+header ul li a {
+	text-decoration:none;
+	color:white;
+}
+
+
+
+.first  {
+  position: relative;
+}
+
+main .first section {
+	color:white;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .first h1 {
+	font-size:55px;
+	margin-bottom:0px;	
+}
+main .first h3{
+	font-family:"Arial",sans-serif;
+	font-size:25px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .first p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .first a {
+	text-decoration:none;
+	color: #33adff;
+}
+main .first img{
+	width:100%;
+}
+
+
+.second  {
+  position: relative;
+}
+
+
+main .second  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .second  h1 {
+	font-size:55px;
+	margin-bottom:0px;	
+}
+main .second  h3{
+	font-family:"Arial",sans-serif;
+	font-size:22px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .second  p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .second  a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+.third  {
+  position: relative;
+}
+
+
+main .third   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .third   h1 {
+	font-size:55px;
+	margin-bottom:0px;	
+}
+
+main .third   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .third   a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+#gallery{
+	display:flex;
+}
+#gallery div {
+	flex: 25%;
+}
+#gallery img {
+	width:100%;
+	padding-bottom:4px;
+	padding-top:4px;
+}
+.fourth  {
+  position: relative;
+   padding-right:2px;
+  
+}
+
+main .fourth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fourth  p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+	
+}
+main .fourth   a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+.fifth {
+  position: relative;
+   padding-left:2px;
+}
+
+main .fifth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fifth   h1 {
+	font-size:30px;
+	margin-bottom:0px;	
+}
+
+main .fifth   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .fifth  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+
+#gallery2{
+	display:flex;
+}
+
+#gallery2 div {
+	flex: 25%;
+
+	
+}
+
+#gallery2 img{
+	width:100%
+}
+
+.sixth {
+  position: relative;
+      padding-right:2px;
+}
+
+main .sixth  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    left: 75%%;
+    transform: translate(-50%, -50%);
+}
+main .sixth   h1 {
+	font-size:30px;
+	margin-bottom:0px;	
+}
+
+main .sixth   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .sixth  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+.seventh {
+  position: relative;
+   padding-left:2px;
+}
+
+main .seventh  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+ 
+    transform: translate(-50%, -50%);
+}
+
+main .seventh  h6{
+	font-family:"Arial",sans-serif;
+	font-size:15px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .seventh   p{
+	font-size:13px;
+	color:gray;
+	margin-top:0px;
+}
+main .seventh  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+
+footer{
+	background-color: #f2f2f2;
+	height:auto;
+	width:100%;
+
+}
+footer p {
+	color:#86868b;
+	margin-right:2px;
+	margin-left:40px;
+	font-size:13px;
+	padding-top:20px;
+	font-family:"Arial",sans-serif;
+}
+
+footer section  {
+  display:flex;
+  margin-right:2px;
+  margin-left:2px;
+}
+footer section p3 {
+  font-weight:bold;
+  font-size:14px;
+}
+footer section li {
+  list-style-type:none;
+  line-height: 0,3;
+  color:#86868b;
+  font-size: 14px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  
+}
+footer section a{
+    color:#86868b;
+    text-decoration:none;
+}
+footer section div{
+  margin-top:5px;
+}
+
+hr{
+	align:middle;
+	width:80%
+}
+#more{
+	margin-right:1px;
+	margin-left:40px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#more div a {
+	color:#33adff;
+}
+#finally{
+	margin-right:10px;
+	margin-left:40px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#finally p4{
+	margin-right:10px;
+	 line-height: 0,3;
+}
+#finally a {
+	margin-right:10px;
+	
+}
+#finally a:hover{
+	text-decoration:underline;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) and (min-width: 0px) {
+	body{
+	margin:0px;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.shpbtn{
+	display:block;
+}
+.icon2{
+	display:none;
+}
+.icon3{
+	display:none
+}
+.icon{
+	display:none;
+}
+.aplbtn{
+	display:block;
+}
+.checkbtn {
+	display:block;
+}
+header ul hr {
+	display:block;
+}
+input[type=text] , select, input[type=date] {
+	display:block;
+}
+header{
+	background:rgba(0,0,0,0.8);
+	height:40px;
+	width:100%;
+	position:fixed;
+	 
+}
+header ul {
+	background:rgba(0,0,0,0.8);
+	position:fixed;
+	text-align:left;
+	margin-top:10px;
+	width:100%;
+	padding:0px;
+	transition: all .5s;
+	height:100%;
+	right:-100%;
+}
+#check:checked ~ ul{
+    left: 0;
+  }
+header ul li {	
+	display:block;	
+	padding-left:10%;
+	padding-bottom:1px;
+	padding-top:1px;
+}
+header ul li a {
+	color:#d9d9d9;
+}
+header ul li a:hover{
+	color:white;
+}
+
+
+.first  {
+  position: relative;
+}
+
+main .first section {
+	color:white;
+	text-align:center;
+	position: absolute;
+	top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .first h1 {
+	font-size:40px;
+	margin-bottom:0px;	
+}
+main .first h3{
+	font-family:"Arial",sans-serif;
+	font-size:20px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .first p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .first a {
+		text-decoration:none;
+	color: #33adff;
+}
+
+
+
+.second  {
+  position: relative;
+}
+
+
+main .second  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .second  h1 {
+	font-size:40px;
+	margin-bottom:0px;	
+}
+main .second  h3{
+	font-family:"Arial",sans-serif;
+	font-size:20px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .second  p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .second  a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+
+.third  {
+  position: relative;
+}
+
+
+main .third   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .third   h1 {
+	font-size:40px;
+	margin-bottom:0px;	
+}
+
+main .third   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .third   a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+#gallery{
+	display:flex;
+}
+#gallery div {
+	flex: 25%;
+}
+#gallery img {
+	width:100%;
+	padding-bottom:4px;
+	padding-top:4px;
+}
+.fourth  {
+  position: relative;
+   padding-right:2px;
+  
+}
+
+main .fourth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fourth  p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+	
+}
+main .fourth   a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+.fifth {
+  position: relative;
+   padding-left:2px;
+}
+
+main .fifth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fifth   h1 {
+	font-size:30px;
+	margin-bottom:0px;	
+}
+
+main .fifth   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .fifth  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+
+#gallery2{
+	display:flex;
+}
+
+#gallery2 div {
+	flex: 25%;
+
+	
+}
+
+#gallery2 img{
+	width:100%
+}
+
+.sixth {
+  position: relative;
+      padding-right:2px;
+}
+
+main .sixth  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    left: 75%%;
+    transform: translate(-50%, -50%);
+}
+main .sixth   h1 {
+	font-size:30px;
+	margin-bottom:0px;	
+}
+
+main .sixth   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .sixth  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+.seventh {
+  position: relative;
+   padding-left:2px;
+}
+
+main .seventh  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+ 
+    transform: translate(-50%, -50%);
+}
+
+main .seventh  h6{
+	font-family:"Arial",sans-serif;
+	font-size:15px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .seventh   p{
+	font-size:13px;
+	color:gray;
+	margin-top:0px;
+}
+main .seventh  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+
+footer{
+	background-color: #f2f2f2;
+	height:auto;
+	width:100%;
+}
+footer p {
+	color:#86868b;
+	margin-right:2px;
+	margin-left:40px;
+	font-size:13px;
+	padding-top:20px;
+	font-family:"Arial",sans-serif;
+}
+
+footer section  {
+  display:flex;
+  margin-right:2px;
+  margin-left:2px;
+}
+footer section p3 {
+  font-weight:bold;
+  font-size:14px;
+}
+footer section li {
+  list-style-type:none;
+  line-height: 0,3;
+  color:#86868b;
+  font-size: 14px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  
+}
+footer section a{
+    color:#86868b;
+    text-decoration:none;
+}
+footer section div{
+  margin-top:5px;
+}
+
+hr{
+	align:middle;
+	width:80%
+}
+#more{
+	margin-right:1px;
+	margin-left:40px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#more div a {
+	color:#33adff;
+}
+#finally{
+	margin-right:1px;
+	margin-left:40px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#finally p4{
+	margin-right:10px;
+	 line-height: 0,3;
+}
+#finally a {
+	margin-right:10px;
+	
+}
+#finally a:hover{
+	text-decoration:underline;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px) and (min-width: 0px) {
+#iph1{
+	display:none
+	}
+#iph{
+	display:block
+}
+.first  {
+  position: relative;
+}
+
+main .first section {
+	color:white;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .first h1 {
+	font-size:40px;
+	margin-bottom:0px;	
+}
+main .first h3{
+	font-family:"Arial",sans-serif;
+	font-size:20px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .first p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .first a {
+		text-decoration:none;
+	color: #33adff;
+}
+
+
+
+.second  {
+  position: relative;
+}
+
+
+main .second  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .second  h1 {
+	font-size:40px;
+	margin-bottom:0px;	
+}
+main .second  h3{
+	font-family:"Arial",sans-serif;
+	font-size:20px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .second  p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .second  a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+
+.third  {
+  position: relative;
+}
+
+
+main .third   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .third   h1 {
+	font-size:40px;
+	margin-bottom:0px;	
+}
+
+main .third   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .third   a {
+	text-decoration:none;
+	color: #33adff;
+}
+
+#gallery{
+	display:none;
+}
+#gallery2{
+	display:none;
+}
+#galleryz{
+	display:block;
+}
+#gallery2z{
+	display:block;
+}
+#gallery div {
+	flex: 50%;
+}
+#gallery img {
+	width:100%;
+	padding-bottom:4px;
+	padding-top:4px;
+}
+.fourth  {
+  position: relative;
+   padding-right:2px;
+  
+}
+
+main .fourth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fourth  p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+	
+}
+main .fourth   a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+.fifth {
+  position: relative;
+   padding-left:2px;
+}
+
+main .fifth   section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    transform: translate(-50%, -50%);
+}
+main .fifth   h1 {
+	font-size:30px;
+	margin-bottom:0px;	
+}
+
+main .fifth   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .fifth  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+
+
+
+#gallery2 div {
+	flex: 25%;
+
+	
+}
+
+#gallery2 img{
+	width:100%
+}
+
+.sixth {
+  position: relative;
+      padding-right:2px;
+}
+
+main .sixth  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+    left: 75%%;
+    transform: translate(-50%, -50%);
+}
+main .sixth   h1 {
+	font-size:30px;
+	margin-bottom:0px;	
+}
+
+main .sixth   p{
+	font-size:15px;
+	color:gray;
+	margin-top:0px;
+}
+main .sixth  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+.seventh {
+  position: relative;
+   padding-left:2px;
+}
+
+main .seventh  section {
+	color:black;
+	text-align:center;
+	position: absolute;
+	top: 25%;
+ 
+    transform: translate(-50%, -50%);
+}
+
+main .seventh  h6{
+	font-family:"Arial",sans-serif;
+	font-size:15px;
+    margin-top:0px;
+	margin-bottom:1px;
+}
+main .seventh   p{
+	font-size:13px;
+	color:gray;
+	margin-top:0px;
+}
+main .seventh  a {
+	text-decoration:none;
+	color: #33adff;
+	font-size:13px;
+}
+
+
+footer{
+	background-color: #f2f2f2;
+	height:auto;
+	width:100%;
+}
+#addi{
+	display:none;
+}
+#addition{
+	display:block;
+}
+
+.accordion {
+  background-color:none;
+  color: #444;
+  cursor: pointer;
+  padding: 1px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: inherit; 
+}
+#addition button{
+	padding-left:10%
+}
+.hr1{
+	margin-bottom:px
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: inherit;
+  overflow: hidden;
+}
+.panel ul li {
+	list-style-type:none;
+	text-align:left;
+	
+	
+}
+.panel ul li a {
+	text-decoration:none;
+	list-style-type:none;
+	color:#86868b;
+	padding-left:5%px;
+	font-size: 13px;
+}
+footer p {
+	color:#86868b;
+	margin-right:2px;
+	margin-left:40px;
+	font-size:13px;
+	padding-top:20px;
+	font-family:"Arial",sans-serif;
+}
+
+footer section  {
+  display:flex;
+  margin-right:2px;
+  margin-left:2px;
+}
+footer section p3 {
+  font-weight:bold;
+  font-size:14px;
+}
+footer section li {
+  list-style-type:none;
+  line-height: 0,3;
+  color:#86868b;
+  font-size: 14px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  
+}
+footer section a{
+    color:#86868b;
+    text-decoration:none;
+}
+footer section div{
+  margin-top:5px;
+}
+
+hr{
+	align:middle;
+	width:80%
+}
+#more{
+	margin-right:1px;
+	margin-left:40px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#more div a {
+	color:#33adff;
+}
+#finally{
+	margin-right:1px;
+	margin-left:40px;
+	list-style-type:none;
+	line-height: 1.43;
+	color:#86868b;	
+	font-size: 14px;
+}
+#finally p4{
+	margin-right:10px;
+	 line-height: 0,3;
+}
+#finally a {
+	display:none
+	
+}
+#finally a:hover{
+	text-decoration:underline;
+}
+
+}
+  </style>
+</head>
+
+<body>
+	<header>
+		<input type="checkbox" id="check" />
+		<label for="check"class="checkbtn"><i class="fas fa-ellipsis-v"></i></label>
+		
+		<input type="apple" id="aplbotton" />
+		<label for="aplbotton"class="aplbtn"><i class="fab fa-apple"></i></label>
+		
+		<input type="shop" id="shopbotton" />
+		<label for="shopbotton"class="shpbtn"><i class="fas fa-shopping-cart"></i></label>
+
+		<ul>
+			<li> <a href="#" class="icon"><i class="fab fa-apple"></i> </a> </li>
+			<input type="text" placeholder="Search apple.com" > </input>
+			<hr class="line">
+			<li> <a href="#">Mac</a></li>
+			<hr>
+			<li> <a href="#">iPad</a></li>
+			<hr>
+			<li> <a href="#">iPhone</a></li>
+			<hr>
+			<li> <a href="#">Watch</a></li>
+			<hr>
+			<li> <a href="#">TV</a></li>
+			<hr>
+			<li> <a href="#">Music</a></li>
+			<hr>
+			<li> <a href="#">Support</a></li>
+			<li> <a href="#"class="icon3"><i class="fas fa-search"></i> </a> </li>
+			<li> <a href="#" class="icon2"><i class="fas fa-shopping-cart"></i></a> </i>
+  </li>
+		</ul>
+	</header>
+	
+
+	<main>
+	<div class="first">
+		<img id="iph1" src=" og__eop0rb3mevma_overview.png" >
+		<img id="iph" src="1.jpg">
+		<section>
+			<h1>iPhone SE</h1>
+			<h3>Lots to love.Less to spend. <br> Stating at 399$.</h3>
+			<p>From 3.54$/mo. or $229 with trade-in.</p>
+			<a href="#"> Learn more <i class="fas fa-chevron-right"></i> </a>
+			<a href="#"> Buy <i class="fas fa-chevron-right"></i> </a>
+			
+		</section>
+	</div>
+	<div class="second">
+		<img id="iph1"src="téléchargement.jpg" >
+		<img id="iph" src="2.jpg">
+		<section>
+			<h1>iPhone 11</h1>
+			<h3>Just the right amount of everthing.</h3>
+			<p>From 3.54$/mo. or $229 with trade-in.</p>
+			<a href="#">Learn more <i class="fas fa-chevron-right"></i>  </a>
+			<a href="#">Buy <i class="fas fa-chevron-right"></i> </a>
+		</section>
+	</div>
+	<div class="third">
+		<img id="iph1" src="New iPad Pro 2020.png" >
+		<img id="iph" src="3.jpg">
+		<section>
+			<h1>iPad Pro</h1>
+			<p>Your next is not a computer.</p>
+			<a href="#">Learn more <i class="fas fa-chevron-right"></i> </a>
+			<a href="#">Buy <i class="fas fa-chevron-right"></i> </a>
+		</section>
+		
+		
+	<div id="gallery"> 
+	
+	
+	<div class="fourth">
+		<img src="open_graph_logo1.png">
+		<section>
+			<P>Apple's approach to reopening our stores</p>
+			<a href="#">Read the letter  <i class="fas fa-chevron-right"></i></a>
+		</section>
+	</div>
+	
+	<div class="fifth">
+		<img src="psp-hero-banner-safari.image.large_2xx.jpg" >
+		<section>
+			<h1>iOS 14</h1>
+			<p>Apple's approach to reopening our stores<p>
+			<a href="#">Read the letter <i class="fas fa-chevron-right"></i></a>
+		</section>
+	</div>
+	</div>
+	
+	<div id="gallery2"> 
+	
+	 <div class="sixth">
+		<img src="idl-shipping-pickup-header-2019099.jpg" >
+		<section>
+			<h1>iOS 14</h1>
+			<p>Apple's approach to reopening our stores<p>
+			<a href="#">Read the letter <i class="fas fa-chevron-right"></i> </a>
+		</section>
+	 </div>
+	 <div class="seventh">
+		<img src="appleproductt.png">
+		<section>
+			<h6>Apple Card Monthly installments</h6>
+			<p>Pay for your new Apple products over time, 
+			    intrest-free with Apple Card.</p>
+			<a href="#">Learn more <i class="fas fa-chevron-right"></i> </a>
+		</section>
+	 </div>
+	</div>
+
+	<div id="galleryz"> 
+	
+	<div class="fourth">
+		<img src="open_graph_logo1.png">
+		<section>
+			<P>Apple's approach to reopening our stores</p>
+			<a href="#">Read the letter  <i class="fas fa-chevron-right"></i></a>
+		</section>
+	</div>
+	
+	<div class="fifth">
+		<img src="psp-hero-banner-safari.image.large_2xx.jpg" >
+		<section>
+			<h1>iOS 14</h1>
+			<p>Apple's approach to reopening our stores<p>
+			<a href="#">Read the letter <i class="fas fa-chevron-right"></i></a>
+		</section>
+	</div>
+	</div>
+	
+	<div id="gallery2z"> 
+	
+	 <div class="sixth">
+		<img src="idl-shipping-pickup-header-2019099.jpg" >
+		<section>
+			<h1>iOS 14</h1>
+			<p>Apple's approach to reopening our stores<p>
+			<a href="#">Read the letter <i class="fas fa-chevron-right"></i> </a>
+		</section>
+	 </div>
+	 <div class="seventh">
+		<img src="appleproductt.png">
+		<section>
+			<h6>Apple Card Monthly installments</h6>
+			<p>Pay for your new Apple products over time, 
+			    intrest-free with Apple Card.</p>
+			<a href="#">Learn more <i class="fas fa-chevron-right"></i> </a>
+		</section>
+	 </div>
+	</div>
+</section>
+	</main>
+	<footer>
+	
+		<p>1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X in 
+	good condition. iPhone SE promotional pricing is after trade-in of iPhone 8 in good condition. Additional trade‑in values require purchase 
+	of a new iPhone, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit 
+	any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require
+	saving this information). Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may 
+	apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly 
+	Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and shipping not included. Additional Apple Card Monthly 
+	Installments terms are in the Customer Agreement. Additional iPhone Payments terms are here.
+	
+   <br>Magic Keyboard sold separately.
+	<br>"Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3
+          	months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.
+	</p>
+
+	<hr>
+	<section id="addi">
+	 
+     <div>
+       
+       <ul>
+		 <p3>Shop and Learn</p3>
+         <li><a href="Diversity">Diversity & Belonging</a></li>
+         <li><a href="Accessibility">Accessibility</a></li>
+         <li><a href="Trust">Trust & Safety</a>   </li>
+		 <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+       </ul>
+     </div>
+     <div>
+       
+       <ul>
+		 <p3>Services</p3>
+         <li><a href="Airbnb">Mac</a></li>
+         <li><a href="Work">iPad</a></li>
+         <li><a href="Invite">iPhone</a></li>
+		 <li><a href="Airbnb">TV</a></li>
+         <li><a href="Work">Music</a></li>
+         <li><a href="Invite">Watch</a></li>
+       </ul>
+     </div>
+     <div>
+      
+       <ul>
+	    <p3>Apple Store</p3>
+         <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+		 <li><a href="Host">Apple Books</a></li>
+         <li><a href="experience">Apple Card</a></li>
+         <li><a href="Responsible">iCloud</a></li>
+       </ul>
+     </div>
+     <div>   
+       <ul>
+	     <p3>For Business</p3>
+         <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+		 <li><a href="Host">Apple Books</a></li>
+         <li><a href="experience">Apple Card</a></li>
+         <li><a href="Responsible">iCloud</a></li>
+       </ul>
+     </div>
+    
+	<div>
+      
+       <ul>
+		<p3>Apple Values</p3>
+         <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+		 <li><a href="Host">Apple Books</a></li>
+         <li><a href="experience">Apple Card</a></li>
+         <li><a href="Responsible">iCloud</a></li>
+       </ul>
+     </div>
+    </section>
+
+
+
+
+
+<div id="addition">
+
+
+<button class="accordion">Shop and Learn</button>
+<div class="panel">
+		<ul>
+		 
+         <li><a href="Diversity">Diversity & Belonging</a></li>
+         <li><a href="Accessibility">Accessibility</a></li>
+         <li><a href="Trust">Trust & Safety</a>   </li>
+		 <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+       </ul></div>
+<hr class="hr1">
+<button class="accordion">Services</button>
+<div class="panel">
+		<ul>
+		 
+         <li><a href="Airbnb">Mac</a></li>
+         <li><a href="Work">iPad</a></li>
+         <li><a href="Invite">iPhone</a></li>
+		 <li><a href="Airbnb">TV</a></li>
+         <li><a href="Work">Music</a></li>
+         <li><a href="Invite">Watch</a></li>
+       </ul>
+</div>
+<hr>
+
+<button class="accordion">Apple Store</button>
+	<div class="panel">
+		<ul>
+	    
+         <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+		 <li><a href="Host">Apple Books</a></li>
+         <li><a href="experience">Apple Card</a></li>
+         <li><a href="Responsible">iCloud</a></li>
+       </ul>
+	</div>
+	<hr>
+<button class="accordion">For Business</button>
+	<div class="panel">
+		<ul>
+	    
+         
+         <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+		 <li><a href="Host">Apple Books</a></li>
+         <li><a href="experience">Apple Card</a></li>
+         <li><a href="Responsible">iCloud</a></li>
+       </ul>
+	</div>
+	<hr>
+<button class="accordion">Apple Values</button>
+	<div class="panel">
+		<ul>
+	    
+         
+         <li><a href="Host">Apple Music</a></li>
+         <li><a href="experience">Apple News+</a></li>
+         <li><a href="Responsible">Apple TV</a></li>
+		 <li><a href="Host">Apple Books</a></li>
+         <li><a href="experience">Apple Card</a></li>
+         <li><a href="Responsible">iCloud</a></li>
+       </ul>
+	</div>
+<hr>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</div>
+
+
+
+
+
+	<section id="More">
+	   <div>More ways to shop: <a href ="F" >Find an Apple Store</a> or <a href="O"> other retailer</a> near you. Or call 1-800-MY-APPLE.</div>
+	 </section>
+    <hr>
+
+    <section id="finally">
+
+      <p4>Copyright © 2020 Apple Inc. All rights reserved.</p4> <br>
+       
+        <a href="p">Privacy Policy </a> 
+      
+        <a href="T">Terms of use </a>
+     
+        <a href="S">Sales and refunds</a>
+	
+        <a href="T">Legal </a>
+        <a href="S">Site Map</a>
+      <br>
+    </section>
+
+	</footer>
+	
+	</body>
